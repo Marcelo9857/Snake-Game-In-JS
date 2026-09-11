@@ -1,0 +1,150 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#pontos
+{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    position: absolute;
+    width: 95%;
+    height: 90%;
+    font-size: 30px;
+    color: white;
+}
+
+#tela_jogo
+{
+    position: relative;
+    /*width: 800px;
+    height: 600px;
+    */
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+
+}
+
+#container_jogo
+{
+    
+    left: -3600px;
+    top: -2700px;
+    position: absolute;
+    width: 8000px;
+    height: 6000px;
+    background: black;
+    border: 4px solid red;
+    border-radius: 1%;
+    overflow: hidden;
+}
+
+#tela_inicio
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+    /*background: rgb(0, 0, 0);*/
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+#regras
+{
+    align-self: left;
+    position: absolute;
+}
+
+#regras ul
+{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(1, 1, 1, 0.422);
+}
+
+#tela_inicio p
+{
+    margin-top: 200px;
+}
+
+#tela_inicio #score
+{
+    margin-top: 0px;
+}
+
+#imagem_play
+{
+    display: block;
+    width: 50px;
+    height: 76px;
+    background: url('../imagens/play.png') no-repeat;
+}
+
+#imagem_play:hover
+{
+    cursor: pointer;
+}
+
+.corpo_cobra, .maca_jogo, #cabeca_cobra
+{
+    position: absolute;
+    overflow: hidden;
+}
+
+#cabeca_cobra
+{
+    display: none;
+    background: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.corpo_cobra
+{
+    background: #008000;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.maca_jogo
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    /*box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.614);*/
+}
+
+button{
+    width: 100px;
+    height: 20px;
+}
+
+.corpo_inimigo0, .corpo_inimigo1, .corpo_inimigo2, .corpo_inimigo3, .corpo_inimigo4, .corpo_inimigo5, .corpo_inimigo6, .corpo_inimigo7, .corpo_inimigo8, .corpo_inimigo9
+{
+    background: url("../imagens/tesoura.gif") no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    overflow: hidden;
+}
+

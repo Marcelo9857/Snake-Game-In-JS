@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Jogo Cobrinha</title>
+</head>
+<body>
+    <div id="tela_jogo">
+        <div id="container_jogo">
+            <div id="cabeca_cobra"></div>
+        </div>
+    </div>
+    <div id="pontos"></div>
+    <div id="tela_inicio">
+        <div id="regras">
+            <ul>
+                <li>Não encoste em si mesmo</li>
+                <li>Não ultrapasse a barreira vermelha</li>
+                <li>Não deixe a tesoura cortar a cobrinha se a pontuação for zero</li>
+                <li>Algumas cores de cobrinha mudam o modo de jogo!</li>
+                <li>Use as setinhas ou w,a,s,d para movimentar a cobrinha</li>
+                <li>Pressione Enter para iniciar o jogo</li>
+            </ul>
+        </div>
+        <p>Iniciar Jogo</p>
+        <div id="imagem_play" onclick="iniciar_jogo()"></div>
+        <p id="score">Score: 0</p>
+        <label>Escolha a cor da cobrinha:  
+        <input type="color" name="cor_da_cobrinha" id="inputCor" value="#008000"></label>
+    </div>
+    <script src="funcoes.js"></script>
+    
+</body>
+</html>
