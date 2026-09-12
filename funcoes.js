@@ -8,7 +8,6 @@ while (larguraUtil%20 !=0)
         {
             alturaUtil++
         };
-        console.log(larguraUtil , alturaUtil)
         let indice = 0;
         let posicaoX = 8000/2 -20;
         let posicaoY = 6000/2 -20;
@@ -112,7 +111,6 @@ function crescer_cobrinha()
     corposAntigos.forEach(corpo => corpo.remove());
     cabeca_cobrinha.style.left = `${posicaoX}px`;
     cabeca_cobrinha.style.top = `${posicaoY}px`;
-    //console.log(`nova posicao: ${posicaoX},${posicaoY}, indice = ${indice} `)
     let espacador = 0
     for (let[x,y] of lista){
         if (espacador == 0 || cor_cobra != "#000000")
@@ -494,7 +492,6 @@ function mover_inimigos()
                             if (e[0]%20 == 0 && e[1]%20 ==0 && pontos > 0 )
                                 {
                                     let indice_maca = Math.floor(Math.random() * qtd_macas);
-                                    console.log(indice_maca);
                                     let x_maca_nova = e[0];
                                     let y_maca_nova = e[1];
                                     let lista_soma_posicao_maca = [-20,0,20]
@@ -511,7 +508,6 @@ function mover_inimigos()
                                     maca.style.width = `${tamanho_maca}px`;
                                     maca.style.height = `${tamanho_maca}px`;
                                     //maca.style.boxShadow = `0px 0px 45px 15px rgba(${cor1},${cor2},${cor3},0.614)`;
-                                    console.log(x_maca_nova, y_maca_nova, indice_maca)
                                     //container_jogo.appendChild(maca);
                                     //indice++;
                                 };
